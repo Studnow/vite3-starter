@@ -1,0 +1,56 @@
+@import url(./css/footer.css);
+@import url(./css/typography.css);
+/* @import url(./sass/mixins.sass); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  font-family: Montserrat;
+  margin: 0;
+  height: 100%;
+}
+
+#app,
+.app {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 1 auto;
+  position: relative;
+}
+.common-button {
+  /* background: rgb(2, 0, 36); */
+  background: linear-gradient(90deg, rgba(255, 200, 62, 1) 0%, rgba(255, 200, 62, 1) 0%, rgba(255, 115, 71, 1) 100%);
+  @apply btn btn-accent;
+}
+.cards {
+  @apply flex flex-col gap-4 lg:flex-row justify-between md:gap-4 lg:gap-14 max-w-screen-xl;
+}
+/* .header, .footer, .ways, .offers, .faq, .clients, .advantages, .about {
+  @apply container mx-auto;
+} */
+.text-mid {
+  @apply text-xl sm:text-2xl text-center sm:text-left lg:w-3/4 xl:w-full;
+}
+/* .header {
+  @apply bg-primary;
+} */
