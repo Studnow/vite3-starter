@@ -22,7 +22,7 @@ export default defineConfig({
       context: {
         title: "Handlebars",
       },
-      partialDirectory: [resolve(__dirname, "./src/partials"), resolve(__dirname, "./src/partials/nav"), resolve(__dirname, "./src/partials/content")],
+      partialDirectory: resolve(__dirname, "./src/partials"),
     }),
     // handlebars({}),
     webfontDownload(),
