@@ -51,6 +51,9 @@ body {
 .text-mid {
   @apply text-xl sm:text-2xl text-center sm:text-left lg:w-3/4 xl:w-full;
 }
-/* .header {
+.header {
   @apply bg-primary;
-} */
+}
+.hero {
+  background-image: url(/assets/img/top/bg/waterfall.png);
+}
