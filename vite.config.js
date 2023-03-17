@@ -13,16 +13,20 @@ function handlebarsOverride(options) {
 }
 
 export default defineConfig({
-  base: "/starter/", // for deploy to gh-pages base = outDir
+  base: "/vite3-starter/", // for deploy to gh-pages base = outDir
   build: {
-    outDir: "starter",
+    outDir: "vite3-starter",
   },
   plugins: [
     handlebarsOverride({
       context: {
         title: "Handlebars",
       },
-      partialDirectory: resolve(__dirname, "./src/partials"),
+      partialDirectory: [
+        resolve(__dirname, "./src/partials"),
+        resolve(__dirname, "./src/partials/nav"),
+        resolve(__dirname, "./src/partials/content"),
+      ],
     }),
     // handlebars({}),
     webfontDownload(),
